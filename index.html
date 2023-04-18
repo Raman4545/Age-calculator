@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend-master-calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- code starts here -->
+    <div class="box-container">
+        
+        <form name="myForm" >
+            
+                <div class="form-section">
+                    <label for="day">Day</label><br>
+                    <input type="number" placeholder="DD"  id="day" name="day" min="1" max="31"><br>
+                    <span id="day-error" style="color:red"></span><br>
+                </div>
+                
+                <div class="form-section">
+                    <label for="month">Month</label><br>
+                    <input type="number" placeholder="MM" id="month" name="month" min="1" max="12"><br>
+                    <span id="month-error" style="color:red"></span><br>
+                </div>
+                
+                <div class="form-section">
+                    <label for="year">Year</label><br>
+                    <input type="number" placeholder="YYYY" id="year" name="year" min="1800" max="2023"><br>
+                    <span id="year-error" style="color:red"></span><br>
+                </div>
+
+          
+        <button type="button" id=" calculate " onclick="submitIfValid()" class="btn"><img src="arrow.svg" alt="button"></button>
+        
+        </form>
+        <hr>
+        
+        <div class="result">
+            <div class="years"></div>
+            <div class="months"></div>
+            <div class="days"></div>
+        </div>
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/a52fefc09f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
